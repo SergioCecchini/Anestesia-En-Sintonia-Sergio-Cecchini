@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="../Index.html"><img src="../imagenes/Logo.PNG" alt="logo">
+        </div>
+    <p>anestesia en <span>sintonía</span></p>
+        <nav class="barra">
+            <ul>
+                <li><a href="Quienes Somos.html">Quienes Somos</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Clientes.html">Clientes</a></li>
+                <li><a href="Recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    <section class="secCon">
+<h1>CONTACTO</h1>
+<form action="enviar.php" method="post" enctype="text/plain">
+    <fieldset>
+        <legend>Escribinos!</legend>
+        <br>
+        <div class="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre:"><br>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Apellido:"><br>
+            <br>
+            <label for="">Teléfono</label>
+            <input type="number" placeholder="Teléfono:"><br>
+            <br>
+            <label for="correo">Correo electrónico</label>
+            <input type="mail" name="correo" placeholder="Correo electrónico:"><br>
+            <br>
+        </div>
+        <div class="formulario">
+            <textarea name="comentarios" id="comentarios" cols="40" rows="7" placeholder="Escribe tu consulta"></textarea><br>
+            <br>
+            <input type="checkbox" name="acepta" value="1">Deseo recibir novedades por mail <br>
+        </div>
+            <div class="botonFormulario">
+            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar">
+            <br>
+        </div>
+        <div class="ubicacion">
+            <p>Encontranos en nuestras oficinas:</p> <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.1608273102402!2d-68.84588938868103!3d-32.88966292912138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0907b3f6324b%3A0x501d1521958dfb21!2sPlaza%20Independencia!5e0!3m2!1ses-419!2sar!4v1648254709145!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </fieldset>
+</form>
+
+
+    </section>
+
+<br><br><br><br>
+
+<footer>
+    <a href="../Index.html"><img src="../imagenes/Logo.PNG" alt=""></a>
+    <ul>
+        <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+        <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+        <li><i class="fa-brands fa-linkedin"></i> Linkedin</li>
+    </ul>
+    <p>Todos los derechos reservados</p>
+</footer>
+<div class="Whatsapp">
+    <a href="https://wa.me/542614662508"><i class="fa-brands fa-whatsapp"></i></a></div>
+
+</body>
+</html>

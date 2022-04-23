@@ -1,0 +1,392 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* -------------- HEADER ------------------ */
+header{
+    background-color: rgb(0, 0, 165);
+    height: 200px;
+    width: 100%;
+}
+
+header div{
+    text-align: center;
+}
+
+header p{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+header span{
+    text-transform: capitalize;
+    font-weight: normal;
+    font-style: italic;
+}
+.barra{
+    text-align: center;
+    margin-top: 20px;
+    height: 35px;
+    width: 100%;
+    border-style:ridge;
+    border-color: rgb(0, 217, 255);
+    border-width: 5px;
+    
+}
+header ul li{
+    list-style: none;
+    display: inline;
+}
+header ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    
+    font-size: 1rem;
+    background-color: rgb(0, 0, 165);
+    border-radius: 5%;
+    
+}
+header ul li a:hover{
+    background-color: rgb(154, 255, 255);
+    color: blue;
+}
+
+/* -------------------- MAIN ----------------------- */
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Imagenes/imgfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "video logoAMA"
+        "ingresar ingresar";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo{
+    grid-area: titulo;
+    color: white;
+
+
+}
+.videoAMA{
+    grid-area: video;
+
+}
+.logoAMA{
+    grid-area: logoAMA;
+    justify-self: center;
+    padding-right: 4rem;
+}
+.subtitulo{
+    grid-area: ingresar;
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 5px;
+}
+.logoAMA a img{
+    width: 550px;
+}
+.subtitulo a{
+    text-decoration: none;
+    color: white;
+}
+.ingresar a:hover{
+    color: blue;
+}
+
+@media only screen and (max-width: 1128px){
+    main{
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "video"
+        "logoAMA"
+        "ingresar";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    }
+    .logoAMA{
+        padding-right: 0;
+    }
+}
+
+/* --------------------- FOOTER ------------------- */
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+footer a{
+    margin-left: 40px;
+}
+footer p{
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+}
+footer ul{
+    float: right;
+    font-size: 20px;
+    text-align: left;
+    margin-right: 110px;
+    margin-top: 12px;
+    list-style: none;
+
+}
+.Whatsapp{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: rgb(0, 202, 0);
+    text-align: center;
+    border: 2px solid rgb(0, 202, 0);
+    font-size: 2rem;
+    position: fixed;
+    right: 40px;
+    bottom: 64px;
+    border-radius: 50%;
+}
+.Whatsapp a:visited{
+    color: rgb(0, 202, 0);
+}
+
+/* --------------- QUIENES SOMOS ------------------- */
+.secQS{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 700px;
+    background-image: url(../Imagenes/imgfondoQS.jpg);
+    background-size: cover;
+    
+    font-size: 1rem;
+    
+}
+h1{
+    text-align: center;
+}
+.article1{
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    
+}
+.imgEq1{
+    
+    align-items: center;
+}
+.textoImgEq1{
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+.textoImgEq2{
+    margin-left: 200px;
+    justify-self: end;
+}
+
+.imgEq2{
+    justify-self: start;
+}
+.imgEq2 img{
+    height: auto;
+}
+
+@media only screen and (max-width: 900px){
+    .article1{
+        grid-template-columns: 1fr;
+    }
+    .imgEq2{
+        justify-self: center;
+    }
+    .textoImgEq2{
+       margin: 0 100px 0 100px;
+    }
+}
+
+
+/* ----------------- SERVICIOS -------------- */
+
+.secServ{
+    height: auto;
+    height: auto;
+    width: 100%;
+    background-image: url(../Imagenes/imgServ.jpg);
+    background-size: cover;
+}
+.general{
+   
+    font-size: 18px;
+    padding: 4px 4px 4px 4px;
+    margin-left: 10px;
+    width: 23vw;
+    height: auto;
+    border-top: 5px solid rgb(0, 0, 165);
+    border-bottom: 5px solid rgb(0, 0, 165);
+    border-top-right-radius: 10%;
+}
+.sedacion{
+    
+    font-size: 18px;
+    padding: 4px 4px 4px 4px;
+    margin-top: -5px;
+    margin-left: 24vw;
+    width: 22vw;
+    height: auto;
+    border-top: 5px solid rgb(0, 0, 165);
+    border-bottom: 5px solid rgb(0, 0, 165);
+    border-top-right-radius: 10%;
+}
+.inhalatoria{
+    
+    font-size: 18px;
+    padding: 4px 4px 4px 4px;
+    margin-top: -4px;
+    margin-left: 46vw;
+    width: 22vw;
+    height: auto;
+    border-top: 5px solid rgb(0, 0, 165);
+    border-bottom: 5px solid rgb(0, 0, 165);
+    border-top-right-radius: 10%;
+}
+.monitoreo{
+    
+    font-size: 18px;
+    padding: 4px 4px 4px 4px;
+    margin-top: -5px;
+    margin-left: 68vw;
+    width: 22vw;
+    height: auto;
+    border-top: 5px solid rgb(0, 0, 165);
+    border-bottom: 5px solid rgb(0, 0, 165);
+    border-top-right-radius: 10%;
+}
+section div h2{
+    color: white;
+}
+
+/* ------------------ CLIENTES ------------------- */
+
+.secCli{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Imagenes/imgCli.jpg);
+    background-size: cover;    
+}
+
+.cli{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px dotted rgb(0, 202, 0);
+    border-right: blue;
+    border-radius: 80%;
+    text-align: center;
+    
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 100px;    
+}
+.cli h2{
+    margin-top: 65px;
+    color: blue; 
+}
+
+/* --------------------- RECOMENDACIONES ------------------- */
+.secRec{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Imagenes/imgCli.jpg);
+    background-size: cover;    
+}
+
+.rec{
+    display: inline-block;
+    padding-left: 380px;
+    padding-top: 200px;
+    
+    font-size: 20px;
+}
+.rec ul{
+    list-style-type:circle;
+    margin-top: 15px;
+}
+.rec h2{
+    color: black;
+}
+
+/* ------------------- CONTACTO ---------------- */
+
+.secCon{
+    height: auto;
+    width: 100%;
+    background-image: url(../Imagenes/imgServ.jpg);
+    background-size: cover;
+}
+fieldset{
+    margin-left: 250px;
+    height: auto;
+    width: 1000px;
+    border-width: 5px;
+    border-color: blue;
+    
+    font-size: 15px;
+}
+fieldset legend{
+    padding: 10px;
+    font-size: 25px;
+}
+.formulario{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-bottom: 50px;
+}
+.formulario label{
+    margin-top: 50px;
+}
+.botonFormulario{
+    text-align: center;
+    font-size: 30px;
+    background-color: blue;
+}
+.botonFormulario input{
+    padding: 5px;
+    margin: 10px;
+}
+.ubicacion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
