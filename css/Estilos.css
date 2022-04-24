@@ -65,6 +65,7 @@ main{
     background-image: url(../Imagenes/imgfondo.jpg);
     background-size: cover;
     background-position: center;
+    background-image: linear-gradient(rgb(0, 0, 165) , rgba(0, 0, 0, 0) , rgb(0, 0, 165));
     display: grid;
     grid-template-areas:
         "titulo titulo"
@@ -92,6 +93,7 @@ main{
     justify-self: center;
     padding-right: 4rem;
 }
+
 .subtitulo{
     grid-area: ingresar;
     border: 2px solid white;
@@ -99,14 +101,21 @@ main{
     padding: 5px;
 }
 .logoAMA a img{
+    width: 500px;
+    transition: all 1s;
+
+}
+.logoAMA :hover{
     width: 550px;
 }
 .subtitulo a{
     text-decoration: none;
     color: white;
+    transition: all 1s;
 }
-.ingresar a:hover{
-    color: blue;
+.subtitulo :hover{
+    color: black;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 1128px){
@@ -136,15 +145,13 @@ main{
 footer{
     height: 100px;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(0, 0, 165);
 }
 footer a{
     margin-left: 40px;
 }
-footer p{
-    font-size: 15px;
-    text-align: center;
-    background-color: white;
+footer img{
+    height: 100%;
 }
 footer ul{
     float: right;
@@ -153,7 +160,10 @@ footer ul{
     margin-right: 110px;
     margin-top: 12px;
     list-style: none;
-
+}
+footer p{
+    font-size: 15px;
+    text-align: center;
 }
 .Whatsapp{
     height: 40px;
@@ -239,61 +249,92 @@ h1{
 
 .secServ{
     height: auto;
-    height: auto;
     width: 100%;
-    background-image: url(../Imagenes/imgServ.jpg);
-    background-size: cover;
+
+}
+.secServ h2{
+    color: blue;
 }
 .general{
-   
     font-size: 18px;
     padding: 4px 4px 4px 4px;
     margin-left: 10px;
     width: 23vw;
-    height: auto;
+    height: 190px;
     border-top: 5px solid rgb(0, 0, 165);
     border-bottom: 5px solid rgb(0, 0, 165);
     border-top-right-radius: 10%;
 }
+.general p{
+    color: white;
+    height: 0%;
+    background-color: blue;
+}
+.general :hover{
+    transition: all 1s;
+    height: 110px;
+}
 .sedacion{
-    
     font-size: 18px;
     padding: 4px 4px 4px 4px;
     margin-top: -5px;
     margin-left: 24vw;
     width: 22vw;
-    height: auto;
+    height: 280px;
     border-top: 5px solid rgb(0, 0, 165);
     border-bottom: 5px solid rgb(0, 0, 165);
     border-top-right-radius: 10%;
 }
+.sedacion p{
+    color: white;
+    height: 0%;
+    background-color: blue;
+}
+.sedacion :hover{
+    transition: all 1s;
+    height: 200px;
+}
 .inhalatoria{
-    
     font-size: 18px;
     padding: 4px 4px 4px 4px;
     margin-top: -4px;
     margin-left: 46vw;
     width: 22vw;
-    height: auto;
+    height: 280px;
     border-top: 5px solid rgb(0, 0, 165);
     border-bottom: 5px solid rgb(0, 0, 165);
     border-top-right-radius: 10%;
 }
+.inhalatoria p{
+    color: white;
+    height: 0%;
+    background-color: blue;
+}
+.inhalatoria :hover{
+    transition: all 1s;
+    height: 200px;
+}
 .monitoreo{
-    
     font-size: 18px;
     padding: 4px 4px 4px 4px;
     margin-top: -5px;
     margin-left: 68vw;
     width: 22vw;
-    height: auto;
+    height: 210px;
     border-top: 5px solid rgb(0, 0, 165);
     border-bottom: 5px solid rgb(0, 0, 165);
     border-top-right-radius: 10%;
 }
-section div h2{
+.monitoreo p{
     color: white;
+    height: 0%;
+    background-color: blue;
 }
+.monitoreo :hover{
+    transition: all 1s;
+    height: 130px;
+}
+
 
 /* ------------------ CLIENTES ------------------- */
 
